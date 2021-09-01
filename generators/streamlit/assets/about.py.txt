@@ -1,0 +1,11 @@
+import streamlit as st
+
+
+def app():
+    st.write("## Realização")
+
+    dotlab_col = st.columns(1)
+
+    dotlab_col.image("images/DotLab.png")
+
+    st.balloons()

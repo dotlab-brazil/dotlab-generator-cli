@@ -1,0 +1,15 @@
+import streamlit as st
+
+# Adicionar aqui as novas páginas
+from pages import sobre
+from pages.page_manager import PageManager
+
+app = PageManager()
+
+# Alterar o título da aplicação e adicionar o page_icon
+st.set_page_config(page_title="DotLAB", page_icon="")
+
+# Adicionar aqui as novas páginas
+app.add_page("Sobre", sobre.app)
+
+app.run()
